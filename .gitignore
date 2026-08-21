@@ -1,0 +1,11 @@
+/target
+/result
+.claude/
+/sources
+__pycache__/
+# Compiled test documents and the staged publishable bundle
+/build/
+/dist/
+# Generated verification documents
+/side-by-side.pdf
+/draft-side-by-side.pdf

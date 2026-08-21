@@ -2,3 +2,33 @@
 name = "aalto-logo"
 version = "0.1.0"
 entrypoint = "lib.typ"
+authors = ["Hugo Malinen <https://github.com/Tokor0>"]
+license = "MIT"
+description = "Aalto University logos as native, recolourable Typst curves"
+repository = "https://github.com/Tokor0/aalto-logo"
+keywords = ["aalto", "logo", "university", "branding", "finland"]
+categories = ["components"]
+disciplines = ["education", "design"]
+compiler = "0.13.0"
+
+# Only typst.toml, lib.typ, logos/, README.md and LICENSE belong in the bundle
+# users download. Everything else here is repo-only: the pipeline that
+# regenerates logos/, its inputs, and the tests that verify the output.
+#
+# Patterns are gitignore semantics and match recursively unless anchored with a
+# leading "/" -- hence the slashes on everything that only exists at the root.
+exclude = [
+  "/AI",
+  "/sources",
+  "/tests",
+  "/docs",
+  "/dist",
+  "/build",
+  "/download_logos.py",
+  "/build_vectors.py",
+  "/flake.nix",
+  "/flake.lock",
+  "/Makefile",
+  "/CHANGELOG.md",
+  "*.pdf",
+]
